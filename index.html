@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#home" class="logo"><span>Tim</span></a>
+      <ul class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#cv">CV</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </ul>
+
+      <i class="bx bx-menu-alt-right" id="menu"></i>
+
+      <a href="#contact" class="btn">Contact me</a>
+    </nav>
+
+    <section id="home">
+      <div class="img-box">
+        <img src="img/Me.png" alt="My avatar" />
+      </div>
+
+      <div class="info-box">
+        <h1><span>Hello, I'm Tim</span></h1>
+        <h3><span>Fullstack Developer</span> studying at Chas</h3>
+        <p>
+          I am currently studying .NET fullstack developement. I am working with
+          C#, SQL, HTML&CSS and JS
+        </p>
+      </div>
+
+      <div class="btn-box">
+        <div class="btn"><a href="#contact">Contact Me</a></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-box">
+        <div class="about-info">
+          <h1><span>About Me</span></h1>
+          <p>
+            I am a dedicated **.NET full-stack developer** with expertise in
+            **C#, SQL, HTML & CSS, and JavaScript**. I have a passion for
+            learning new technologies and taking on challenges that push me to
+            grow and improve. I enjoy solving problems, building innovative
+            solutions, and creating impactful software. Collaboration and
+            continuous improvement are at the heart of my approach as I work to
+            stay at the forefront of development trends.
+          </p>
+        </div>
+        <h2><span>Skills</span></h2>
+
+        <div class="skills">
+          <ul>
+            <li>
+              <span><i class="bx bx-chevron-right"></i>HTML</span>
+            </li>
+            <li>
+              <span><i class="bx bx-chevron-right"></i>CSS</span>
+            </li>
+            <li>
+              <span><i class="bx bx-chevron-right"></i>JS</span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span><i class="bx bx-chevron-right"></i>C#</span>
+            </li>
+            <li>
+              <span><i class="bx bx-chevron-right"></i>SQL</span>
+            </li>
+            <li>
+              <span><i class="bx bx-chevron-right"></i>React</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <img src="img/Me.png" alt="My avatar" />
+    </section>
+
+    <section id="cv">
+      <div class="title__cv">
+        <h1><span>CV</span></h1>
+      </div>
+      <div class="cvBoxes">
+        <div class="cvCard">
+          <div class="timelineTitle">
+            <i class="bx bxs-graduation"></i>
+            <h2>Education</h2>
+          </div>
+          <ul class="position">
+            <li class="positionTitle">
+              <span><i class="bx bx-chevron-right"></i> </span>
+              <h3>Chas Academy</h3>
+            </li>
+            <li><h4>Sept 2024 - Present (Major 2026)</h4></li>
+            <p>Fullstack .NET developer</p>
+          </ul>
+          <ul class="position">
+            <li class="positionTitle">
+              <span><i class="bx bx-chevron-right"></i> </span>
+              <h3>Stockholm University</h3>
+            </li>
+            <li><h4>Sept 2020 - June 2023</h4></li>
+            <p>Bachelor in Transaltion</p>
+          </ul>
+          <ul class="position">
+            <li class="positionTitle">
+              <span><i class="bx bx-chevron-right"></i> </span>
+              <h3>French High School</h3>
+            </li>
+            <li><h4>Sept 2017 - June 2020</h4></li>
+            <p>Baccalauréat S (Science)</p>
+          </ul>
+        </div>
+        <div class="cvCard">
+          <div class="timelineTitle">
+            <i class="bx bx-briefcase"></i>
+            <h2>Experience</h2>
+          </div>
+          <ul class="position">
+            <li class="positionTitle">
+              <span><i class="bx bx-chevron-right"></i> </span>
+              <h3>Ritorno AB</h3>
+            </li>
+            <li><h4>Nov 2018 - Present</h4></li>
+            <p>Barista/Admin/WordPress/Slack Admin</p>
+          </ul>
+          <ul class="position">
+            <li class="positionTitle">
+              <span><i class="bx bx-chevron-right"></i> </span>
+              <h3>Plint AB</h3>
+            </li>
+            <li><h4>Mar 2023 - May 2023</h4></li>
+            <p>Internship as a film subtitler</p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="portfolioTitle">
+        <h1><span>Portfolio</span></h1>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-card">
+          <img src="./img/VeloRent.png" alt="" />
+          <div class="container">
+            <div class="interior">
+              <a class="btn" href="#open-modal"
+                >Click me for more information</a
+              >
+            </div>
+          </div>
+          <div id="open-modal" class="modal-window">
+            <div>
+              <a href="#portfolio" title="Close" class="modal-close">Close</a>
+              <div class="container__modal-window">
+                <h1><span>VeloRent</span></h1>
+                <div class="text__modal-window">
+                  <h4>
+                    VeloRent is a console app project where I created an app
+                    that allows users to login/register and rent a car. There
+                    are three different locations with various cars. Users can
+                    update and cancel bookings and also change personal
+                    information like password, name, etc.
+                  </h4>
+                </div>
+                <p><span>Tech Stacks:</span> C#, SQL, Spectre.Console</p>
+                <div class="github-link">
+                  <a
+                    href="https://github.com/timsuv/VeloRent.git"
+                    target="_blank"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contactTitle">
+        <h1><span>Contact me</span></h1>
+      </div>
+
+      <div class="contactBox">
+        <div class="myInfo">
+          <div class="info">
+            <span><i class="bx bx-phone"></i></span>
+            <h3>Phone</h3>
+            <p><a href="tel:0761772149">076-177-21-49</a></p>
+          </div>
+          <div class="info">
+            <span><i class="bx bx-map"></i></span>
+            <h3>Location</h3>
+            <p>Stockholm, Sweden</p>
+          </div>
+          <div class="info">
+            <span><i class="bx bx-envelope"></i></span>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:timsuvorov@icloud.com">timsuvorov@icloud.com</a>
+            </p>
+            <div class="socialMedia">
+              <a href="https://linkedin.com/in/timofey-suvorov-99a35a224">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="https://github.com/timsuv">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="form-container">
+          <form class="form">
+            <div class="form-group">
+              <label for="email">Company Email</label>
+              <input type="text" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="textarea">How Can We Help You?</label>
+              <textarea
+                name="textarea"
+                id="textarea"
+                rows="10"
+                cols="50"
+                required
+              ></textarea>
+            </div>
+            <button class="form-submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
