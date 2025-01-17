@@ -381,7 +381,7 @@ section {
   padding: 1em;
   border-radius: 1em;
   background-color: var(--background);
-  height: 32vh;
+  height: auto;
 }
 .portfolio-card h3 {
   font-size: 1.5em;
@@ -565,7 +565,8 @@ section {
   transition: all 0.3s;
 }
 .portfolio-card img {
-  width: 40vh;
+  width: 100%;
+  max-width: 300px;
   margin-bottom: 1.5em;
 }
 .github-link a {
@@ -779,6 +780,7 @@ footer p{
   #portfolio h2 {
     font-size: 2em;
   }
+  
   p {
     font-size: 0.7em;
   }
