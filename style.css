@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: "Arial";
+  font-family: "Nunito", sans-serif;
 }
 :root {
   --background: rgb(24, 24, 24);
@@ -33,6 +33,12 @@ header {
 }
 .burgerNav {
   display: none;
+}
+.easterEgg{
+  font-size: 1em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 850px) {
@@ -285,10 +291,19 @@ section {
 .about-box h2 {
   font-size: 2.5em;
 }
+.jsBtn{
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  text-align: start;
+}
+
+
 
 .title__cv {
   font-size: 3em;
   margin-top: 50px;
+  cursor: pointer;
 }
 .position {
   display: flex;
@@ -592,6 +607,54 @@ section {
   border-radius: 1rem;
   color: #fff;
 }
+
+.btn__surprise {
+  --bg: #e74c3c;
+  --text-color: #fff;
+  position: relative;
+  width: 150px;
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+  cursor: pointer;
+}
+
+.btn__surprise:hover {
+  opacity: 1;
+}
+#surprise{
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+footer a{
+  text-decoration: none;
+  color: rgb(52, 49, 49);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+footer a:hover{
+  color: #6cff52;
+}
+
+.btn__surprise:active {
+  top: 4px;
+  box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+}
+#surprise h2{
+  color: white;
+}
+
 @media (max-width: 800px) {
   .modal-window > div {
     margin-top: 50px;
@@ -638,13 +701,21 @@ section {
   max-width: 150px;
   display: block;
 }
-
-.interior .btn {
+.btn{
+  text-decoration: none;
+  color: white;
   background-color: var(--second-background);
   padding: 1em 1.5em;
   border-radius: 0.5rem;
-  text-decoration: none;
+  font-weight: 500;
+  border: solid 2px white;
 }
+.btn:hover{
+  background-color: white;
+  color: var(--background);
+  border: solid 2px black;
+}
+
 
 .interior .btn i {
   padding-right: 0.3em;

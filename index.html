@@ -6,7 +6,10 @@
     <title>CV Portal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -48,7 +51,7 @@
       </div>
 
       <div class="info-box">
-        <h1><span>Hello, I'm Tim</span></h1>
+        <h1><span>Hello, I'm <button class="easterEgg"><span>Tim</span></button></span></h1>
         <h3><span>Fullstack Developer</span> studying at Chas</h3>
         <p>
           I am currently studying .NET fullstack developement. I am working with
@@ -75,7 +78,9 @@
             forefront of development trends.
           </p>
         </div>
-        <h2><span>Skills</span></h2>
+        <button class="jsBtn">
+          <h2><span>Skills</span></h2>
+        </button>
 
         <div class="skills">
           <ul class="skills__list">
@@ -102,7 +107,7 @@
           </ul>
         </div>
       </div>
-        
+
       <img src="img/Me.png" alt="My avatar" />
     </section>
 
@@ -172,7 +177,7 @@
       </div>
       <div class="portfolio-box">
         <div class="portfolio-card">
-          <img src="./img/VeloRent.png" alt="" />
+          <img src="./img/VeloRent.png" alt="Project picture" />
           <div class="container">
             <div class="interior">
               <a class="btn" href="#open-modal"
@@ -208,7 +213,7 @@
           </div>
         </div>
         <div class="portfolio-card">
-          <img src="./img/NetBank.png" alt="" />
+          <img src="./img/NetBank.png" alt="Project picture" />
           <div class="container">
             <div class="interior">
               <a class="btn" href="#open-modal2"
@@ -279,7 +284,7 @@
           </div>
         </div>
         <div class="form-container">
-          <form class="form">
+          <form class="form" id="form">
             <div class="form-group">
               <label for="email">Company Email</label>
               <input type="text" id="email" name="email" required />
