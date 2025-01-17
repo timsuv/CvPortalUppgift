@@ -120,7 +120,7 @@ header {
 .logo:hover {
   opacity: 1;
 }
-.btn {
+.btn-box {
   padding: 0, 5em 1em;
   color: white;
   font-weight: 500;
@@ -132,14 +132,18 @@ header {
   transition: 0, 3s ease-in-out;
   padding: 9px;
 }
+
+.btn-box:hover {
+  background-color: white;
+  a{
+    color: var(--background);
+  }
+}
 .btn-box a {
   text-decoration: none;
   color: white;
 }
-.btn-box :hover {
-  background-color: white;
-  color: var(--background);
-}
+
 
 span {
   background: linear-gradient(to right, #6cff52, #3ec5ff);
