@@ -381,7 +381,7 @@ section {
   padding: 1em;
   border-radius: 1em;
   background-color: var(--background);
-  height: auto;
+  height: 40vh;
 }
 .portfolio-card h3 {
   font-size: 1.5em;
