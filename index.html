@@ -5,26 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Portal</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav>
+    <header>
       <a href="#home" class="logo"><span>Tim</span></a>
-      <ul class="links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#cv">CV</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </ul>
 
-      <i class="bx bx-menu-alt-right" id="menu"></i>
+      <nav class="navigationDesktop">
+        <ul class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#cv">CV</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </ul>
+      </nav>
 
-      <a href="#contact" class="btn">Contact me</a>
-    </nav>
+      <button id="toggleBurger" class="toggleBurger">
+        <div class="burgerSpan"></div>
+        <div class="burgerSpan"></div>
+        <div class="burgerSpan"></div>
+      </button>
+      <nav class="burgerNav" id="burgerNav">
+        <ul class="burgerList">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#cv">CV</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </ul>
+      </nav>
+    </header>
 
     <section id="home">
       <div class="img-box">
@@ -48,21 +64,21 @@
     <section id="about">
       <div class="about-box">
         <div class="about-info">
-          <h1><span>About Me</span></h1>
+          <h2><span>About Me</span></h2>
           <p>
-            I am a dedicated **.NET full-stack developer** with expertise in
-            **C#, SQL, HTML & CSS, and JavaScript**. I have a passion for
-            learning new technologies and taking on challenges that push me to
-            grow and improve. I enjoy solving problems, building innovative
-            solutions, and creating impactful software. Collaboration and
-            continuous improvement are at the heart of my approach as I work to
-            stay at the forefront of development trends.
+            I am a dedicated .NET full-stack developer with expertise in C#,
+            SQL, HTML & CSS, and JavaScript. I have a passion for learning new
+            technologies and taking on challenges that push me to grow and
+            improve. I enjoy solving problems, building innovative solutions,
+            and creating impactful software. Collaboration and continuous
+            improvement are at the heart of my approach as I work to stay at the
+            forefront of development trends.
           </p>
         </div>
         <h2><span>Skills</span></h2>
 
         <div class="skills">
-          <ul>
+          <ul class="skills__list">
             <li>
               <span><i class="bx bx-chevron-right"></i>HTML</span>
             </li>
@@ -73,7 +89,7 @@
               <span><i class="bx bx-chevron-right"></i>JS</span>
             </li>
           </ul>
-          <ul>
+          <ul class="skills__list">
             <li>
               <span><i class="bx bx-chevron-right"></i>C#</span>
             </li>
@@ -86,13 +102,13 @@
           </ul>
         </div>
       </div>
-
+        
       <img src="img/Me.png" alt="My avatar" />
     </section>
 
     <section id="cv">
       <div class="title__cv">
-        <h1><span>CV</span></h1>
+        <h2><span>CV</span></h2>
       </div>
       <div class="cvBoxes">
         <div class="cvCard">
@@ -152,7 +168,7 @@
 
     <section id="portfolio">
       <div class="portfolioTitle">
-        <h1><span>Portfolio</span></h1>
+        <h2><span>Portfolio</span></h2>
       </div>
       <div class="portfolio-box">
         <div class="portfolio-card">
@@ -168,7 +184,7 @@
             <div>
               <a href="#portfolio" title="Close" class="modal-close">Close</a>
               <div class="container__modal-window">
-                <h1><span>VeloRent</span></h1>
+                <h2><span>VeloRent</span></h2>
                 <div class="text__modal-window">
                   <h4>
                     VeloRent is a console app project where I created an app
@@ -191,12 +207,47 @@
             </div>
           </div>
         </div>
+        <div class="portfolio-card">
+          <img src="./img/NetBank.png" alt="" />
+          <div class="container">
+            <div class="interior">
+              <a class="btn" href="#open-modal2"
+                >Click me for more information</a
+              >
+            </div>
+          </div>
+          <div id="open-modal2" class="modal-window">
+            <div>
+              <a href="#portfolio" title="Close" class="modal-close">Close</a>
+              <div class="container__modal-window">
+                <h2><span>NetBank</span></h2>
+                <div class="text__modal-window">
+                  <h4>
+                    NetBank is a console app group project where we created an
+                    app that allows users to login/register and manage a banc
+                    account. An user can deposit, withdraw, transfer money and
+                    check the balance.
+                  </h4>
+                </div>
+                <p><span>Tech Stacks:</span> C#</p>
+                <div class="github-link">
+                  <a
+                    href="https://github.com/timsuv/BankNET2024.git"
+                    target="_blank"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="contactTitle">
-        <h1><span>Contact me</span></h1>
+        <h2><span>Contact me</span></h2>
       </div>
 
       <div class="contactBox">
@@ -238,7 +289,7 @@
               <input type="text" id="phone" name="phone" required />
             </div>
             <div class="form-group">
-              <label for="textarea">How Can We Help You?</label>
+              <label for="textarea">Leave a message</label>
               <textarea
                 name="textarea"
                 id="textarea"
