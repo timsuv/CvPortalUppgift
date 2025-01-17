@@ -34,7 +34,7 @@ header {
 .burgerNav {
   display: none;
 }
-.easterEgg{
+.easterEgg {
   font-size: 1em;
   background-color: transparent;
   border: none;
@@ -96,7 +96,7 @@ header {
   h1 {
     font-size: 2em;
   }
-  #contact{
+  #contact {
     margin-bottom: 10px;
   }
 }
@@ -141,7 +141,7 @@ header {
 
 .btn-box:hover {
   background-color: white;
-  a{
+  a {
     color: var(--background);
   }
 }
@@ -149,7 +149,6 @@ header {
   text-decoration: none;
   color: white;
 }
-
 
 span {
   background: linear-gradient(to right, #6cff52, #3ec5ff);
@@ -291,14 +290,12 @@ section {
 .about-box h2 {
   font-size: 2.5em;
 }
-.jsBtn{
+.jsBtn {
   cursor: pointer;
   background: transparent;
   border: none;
   text-align: start;
 }
-
-
 
 .title__cv {
   font-size: 3em;
@@ -630,28 +627,28 @@ section {
 .btn__surprise:hover {
   opacity: 1;
 }
-#surprise{
+#surprise {
   padding: 2em;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: rgb(52, 49, 49);
   position: absolute;
   right: 10px;
   bottom: 10px;
 }
-footer a:hover{
+footer a:hover {
   color: #6cff52;
 }
 
 .btn__surprise:active {
   top: 4px;
-  box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+  box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px;
 }
-#surprise h2{
+#surprise h2 {
   color: white;
 }
 
@@ -701,7 +698,7 @@ footer a:hover{
   max-width: 150px;
   display: block;
 }
-.btn{
+.btn {
   text-decoration: none;
   color: white;
   background-color: var(--second-background);
@@ -710,15 +707,19 @@ footer a:hover{
   font-weight: 500;
   border: solid 2px white;
 }
-.btn:hover{
+.btn:hover {
   background-color: white;
   color: var(--background);
   border: solid 2px black;
 }
 
-
 .interior .btn i {
   padding-right: 0.3em;
+}
+footer p{
+  color: white;
+  text-align: center;
+  margin-top: 2em;
 }
 @media (max-width: 550px) {
   .info-box h1 {
@@ -734,59 +735,57 @@ footer a:hover{
   .img-box img {
     max-height: 120px;
   }
-  p{
+  p {
     font-size: 0.8em;
   }
-  .about-box h2{
+  .about-box h2 {
     font-size: 1.5em;
   }
-  .skills ul{
+  .skills ul {
     font-size: 0.9em;
   }
-  .title__cv h2{
+  .title__cv h2 {
     font-size: 1em;
   }
-  .timelineTitle h2{
+  .timelineTitle h2 {
     font-size: 1.3em;
   }
-  .positionTitle h3{
+  .positionTitle h3 {
     font-size: 1em;
   }
-  h4{
+  h4 {
     font-size: 0.9em;
   }
-
+ 
 }
-@media (max-width:450px){
-  #about{
-   padding: 5% 5%;
-   margin-left: 15px;
-   margin-right: 15px;
+@media (max-width: 450px) {
+  #about {
+    padding: 5% 5%;
+    margin-left: 15px;
+    margin-right: 15px;
   }
-  #contact{
+  #contact {
     padding: 0 5%;
   }
-  #contact h2{
+  #contact h2 {
     font-size: 2em;
   }
-  .form-container{
+  .form-container {
     width: 100%;
   }
-  #portfolio{
+  #portfolio {
     padding: 0 5%;
   }
-  #portfolio h2{
+  #portfolio h2 {
     font-size: 2em;
-
   }
-  p{
+  p {
     font-size: 0.7em;
   }
-  h4{
+  h4 {
     font-size: 0.8em;
   }
-  .title__cv{
+  .title__cv {
     margin-top: 100px;
   }
-  
 }
