@@ -551,7 +551,8 @@ section {
   }
 }
 
-.modal-window {
+#open-modal,
+#open-modal2 {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
@@ -565,8 +566,7 @@ section {
   transition: all 0.3s;
 }
 .portfolio-card img {
-  width: 100%;
-  max-width: 300px;
+  width: 80%;
   margin-bottom: 1.5em;
 }
 .github-link a {
@@ -582,7 +582,8 @@ section {
   align-items: center;
   gap: 1.5em;
 }
-.modal-window:target {
+#open-modal:target,
+#open-modal2:target {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
@@ -594,8 +595,8 @@ section {
   width: 100%;
   gap: 1.5em;
 }
-
-.modal-window > div {
+#open-modal > div,
+#open-modal2 > div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -654,16 +655,18 @@ footer a:hover {
 }
 
 @media (max-width: 800px) {
-  .modal-window > div {
+  #open-modal > div,
+  #open-modal2 > div {
     margin-top: 50px;
   }
 }
 
-.modal-window header {
+#open-modal header,
+#open-modal2 header {
   font-weight: bold;
 }
-
-.modal-window h2 {
+#open-modal h2,
+#open-modal2 h2 {
   font-size: 150%;
   margin: 0 0 15px;
 }
@@ -690,8 +693,8 @@ footer a:hover {
   align-items: center;
   height: 100vh;
 }
-
-.modal-window div:not(:last-of-type) {
+#open-modal div:not(:last-of-type),
+#open-modal2 div:not(:last-of-type) {
   margin-bottom: 15px;
 }
 
@@ -717,7 +720,7 @@ footer a:hover {
 .interior .btn i {
   padding-right: 0.3em;
 }
-footer p{
+footer p {
   color: white;
   text-align: center;
   margin-top: 2em;
@@ -757,7 +760,6 @@ footer p{
   h4 {
     font-size: 0.9em;
   }
- 
 }
 @media (max-width: 450px) {
   #about {
@@ -780,7 +782,7 @@ footer p{
   #portfolio h2 {
     font-size: 2em;
   }
-  
+
   p {
     font-size: 0.7em;
   }
