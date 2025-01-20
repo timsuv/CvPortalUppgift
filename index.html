@@ -6,10 +6,13 @@
     <title>CV Portal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -51,7 +54,12 @@
       </div>
 
       <div class="info-box">
-        <h1><span>Hello, I'm <button class="easterEgg"><span>Tim</span></button></span></h1>
+        <h1>
+          <span
+            >Hello, I'm
+            <button class="easterEgg"><span>Tim</span></button></span
+          >
+        </h1>
         <h3><span>Fullstack Developer</span> studying at Chas</h3>
         <p>
           I am currently studying .NET fullstack developement. I am working with
@@ -175,7 +183,7 @@
       <div class="portfolioTitle">
         <h2><span>Portfolio</span></h2>
       </div>
-      <div class="portfolio-box">
+      <!-- <div class="portfolio-box">
         <div class="portfolio-card">
           <img src="./img/VeloRent.png" alt="Project picture" />
           <div class="container">
@@ -247,9 +255,78 @@
             </div>
           </div>
         </div>
+      </div> -->
+      <div class="projectBox">
+        <div class="projectCard">
+          <img src="img/VeloRent.png" alt="Project 1" />
+          <div class="wrapper">
+            <a href="#project1">Click for more information</a>
+          </div>
+
+          <div id="project1" class="modal">
+            <div class="modal__content">
+              <h1><span>VeloRent</span></h1>
+
+              <div class="text__modal-window">
+                <h4>
+                  VeloRent is a console app project where I created an app that
+                  allows users to login/register and rent a car. There are three
+                  different locations with various cars. Users can update and
+                  cancel bookings and also change personal information like
+                  password, name, etc.
+                </h4>
+              </div>
+              <p><span>Tech Stacks:</span> C#, SQL, Spectre.Console</p>
+              <div class="github-link">
+                <a
+                  href="https://github.com/timsuv/VeloRent.git"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+
+              <a href="#portfolio" class="modal__close">&times;</a>
+            </div>
+          </div>
+        </div>
+        <div class="projectCard">
+          <img src="img/NetBank.png" alt="Project 2" />
+          <div class="wrapper">
+            <a href="#project2">Click for more information</a>
+          </div>
+
+          <div id="project2" class="modal">
+            <div class="modal__content">
+              <h1><span>NetBank</span></h1>
+
+              <div class="text__modal-window">
+                <h4>
+                  NetBank is a console app group project where we created an app
+                  that allows users to login/register and manage a banc account.
+                  An user can deposit, withdraw, transfer money and check the
+                  balance.
+                </h4>
+              </div>
+              <p><span>Tech Stacks:</span> C#</p>
+              <div class="github-link">
+                <a
+                  href="https://github.com/timsuv/BankNET2024.git"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+
+              <a href="#portfolio" class="modal__close">&times;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard"></div>
       </div>
     </section>
-      
+
     <section id="contact">
       <div class="contactTitle">
         <h2><span>Contact me</span></h2>
@@ -309,7 +386,7 @@
       </div>
     </section>
     <footer>
-       <p>Website created by Timofey Suvorov</p> 
+      <p>Website created by Timofey Suvorov</p>
     </footer>
     <script src="script.js"></script>
   </body>

@@ -343,6 +343,99 @@ section {
   color: white;
   margin-top: 2em;
 }
+.projectBox{
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.projectCard{
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: var(--background);
+  margin: 2vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.projectCard img{
+  margin-top: 1em;
+  width: 60%;
+}
+
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  height: 10vh;
+  
+}
+
+.wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--background);
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, .7);
+  transition: all .4s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+}
+
+.modal__content {
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  padding: 1em 2em;
+  background-color: var(--second-background);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+.modal__content p {
+  color: white;
+}
+
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* old code */
 .portfolio-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -350,16 +443,16 @@ section {
   margin-top: 3vh;
 }
 @media (max-width: 1200px) {
-  .portfolio-box {
+  .projectBox {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    flex-direction: column;
+    height: 100%;
   }
   .container {
     font-size: 10px;
   }
 }
-.portfolio-box p {
+.projectBox p {
   color: white;
   opacity: 0.8;
 }
