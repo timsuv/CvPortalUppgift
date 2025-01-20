@@ -240,6 +240,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 5em;
+  width: 100%;
 }
 #about img {
   width: 20vw;
