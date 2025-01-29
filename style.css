@@ -757,8 +757,7 @@ footer p {
 @media (max-width: 450px) {
   #about {
     padding: 5% 5%;
-    margin-left: 15px;
-    margin-right: 15px;
+    
   }
   #contact {
     padding: 0 5%;
@@ -769,8 +768,11 @@ footer p {
   .form-container {
     width: 100%;
   }
-  #portfolio {
-    padding: 0 5%;
+  .portfolioTitle{
+    padding: 5% 5%;
+  }
+  .projectBox{
+    padding: 5% 5%
   }
   #portfolio h2 {
     font-size: 2em;
