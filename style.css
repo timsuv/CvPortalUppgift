@@ -151,15 +151,11 @@ header {
 }
 
 span {
-  background: linear-gradient(to right, #6cff52, #3ec5ff);
+  background: linear-gradient(to right, #4EFFEF, #4BEC32);
   background-clip: text;
   color: transparent;
 }
-#menu {
-  color: white;
-  font-size: 3em;
-  display: none;
-}
+
 section {
   min-height: 100vh;
   padding: 5% 15%;
@@ -224,7 +220,13 @@ section {
   background-color: var(--background);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+  background: linear-gradient(to bottom, #4EFFEF, #4BEC32);
+}
+@media (max-width: 800px)
+{
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .img-box {
@@ -334,6 +336,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
   margin-top: 3vh;
+  
 }
 .bxs-graduation,
 .bx-briefcase {
@@ -516,7 +519,7 @@ section {
   margin-top: 2em;
   width: 400px;
   background: linear-gradient(#212121, #212121) padding-box,
-    linear-gradient(145deg, transparent 35%, #6cff52, #3ec5ff) border-box;
+    linear-gradient(145deg, transparent 35%, #4EFFEF, #4BEC32) border-box;
   border: 2px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
