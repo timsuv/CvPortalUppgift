@@ -454,7 +454,6 @@ section {
 #portfolio {
   background-color: var(--second-background);
   gap: 5em;
-  padding: 0;
 }
 .portfolioTitle {
   margin-top: 50px;
@@ -479,7 +478,6 @@ section {
 }
 #contact {
   background-color: var(--background);
-  padding: 0;
 }
 #contact h2 {
   font-size: 3em;
@@ -627,6 +625,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0;
   }
   .contactBox {
     grid-template-columns: 1fr;
@@ -756,7 +755,7 @@ footer p {
 }
 @media (max-width: 450px) {
   #about {
-    padding: 5% 5%;
+    padding-top: 2em;
     
   }
   #contact {
