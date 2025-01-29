@@ -151,7 +151,7 @@ header {
 }
 
 span {
-  background: linear-gradient(to right, #4EFFEF, #4BEC32);
+  background: linear-gradient(to right, #4effef, #4bec32);
   background-clip: text;
   color: transparent;
 }
@@ -220,10 +220,9 @@ section {
   background-color: var(--background);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #4EFFEF, #4BEC32);
+  background: linear-gradient(to bottom, #4effef, #4bec32);
 }
-@media (max-width: 800px)
-{
+@media (max-width: 800px) {
   ::-webkit-scrollbar {
     display: none;
   }
@@ -242,7 +241,6 @@ section {
   align-items: center;
   justify-content: center;
   gap: 5em;
-  
 }
 #about img {
   width: 20vw;
@@ -336,7 +334,6 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
   margin-top: 3vh;
-  
 }
 .bxs-graduation,
 .bx-briefcase {
@@ -519,7 +516,7 @@ section {
   margin-top: 2em;
   width: 400px;
   background: linear-gradient(#212121, #212121) padding-box,
-    linear-gradient(145deg, transparent 35%, #4EFFEF, #4BEC32) border-box;
+    linear-gradient(145deg, transparent 35%, #4effef, #4bec32) border-box;
   border: 2px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
@@ -756,7 +753,6 @@ footer p {
 @media (max-width: 450px) {
   #about {
     padding-top: 2em;
-    
   }
   #contact {
     padding: 0 5%;
@@ -767,16 +763,16 @@ footer p {
   .form-container {
     width: 100%;
   }
-  .portfolioTitle{
+  .portfolioTitle {
     padding: 5% 5%;
   }
-  .projectBox{
-    padding: 5% 5%
+  .projectBox {
+    padding: 5% 5%;
   }
   #portfolio h2 {
     font-size: 2em;
   }
-  #portfolio{
+  #portfolio {
     padding-top: 2em;
   }
 
@@ -789,4 +785,50 @@ footer p {
   .title__cv {
     margin-top: 100px;
   }
+}
+/* print settings */
+@media print {
+  #home,
+  #portfolio,
+  header,
+  footer,
+  .form-container {
+    display: none;
+  }
+  #cv,
+  #about,
+  #contact {
+    background-color: transparent;
+    color: #000;
+    gap: 0;
+  }
+  #cv h2, #about h2, #contact h2 {
+    color: #000;
+  }
+  #cv h3, #about h3, #contact h3 {
+    color: #000;
+  }
+  #cv p, #about p, #contact p {
+    color: #000;
+  }
+  #cv li{
+    color: #000;
+  }
+  #cv span, #about span, #contact span {
+    color: #000;
+  }
+  .title__cv{
+    margin-top: 0;
+    
+  }
+  .cvBoxes{
+    margin-top: 0;
+  }
+  .cvCard{
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+    padding: 0;
+  }
+  
 }
