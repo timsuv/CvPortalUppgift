@@ -242,7 +242,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 5em;
-  width: 100%;
+  
 }
 #about img {
   width: 20vw;
@@ -454,6 +454,7 @@ section {
 #portfolio {
   background-color: var(--second-background);
   gap: 5em;
+  padding: 0;
 }
 .portfolioTitle {
   margin-top: 50px;
@@ -478,6 +479,7 @@ section {
 }
 #contact {
   background-color: var(--background);
+  padding: 0;
 }
 #contact h2 {
   font-size: 3em;
@@ -635,7 +637,7 @@ section {
   }
   .cvCard {
     justify-self: center;
-    width: 80%;
+    width: 70vw;
   }
 }
 
