@@ -777,6 +777,9 @@ footer p {
   #portfolio h2 {
     font-size: 2em;
   }
+  #portfolio{
+    padding-top: 2em;
+  }
 
   p {
     font-size: 0.7em;
