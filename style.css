@@ -357,11 +357,11 @@ section {
   border-radius: 6px;
   background-color: var(--background);
   margin: 2vh;
-  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding: 1em;
 }
 .projectCard img {
   margin-top: 1em;
@@ -422,8 +422,15 @@ section {
   align-items: center;
   gap: 1.5em;
 }
-.modal__content p {
+
+
+.modal__content a {
+  text-decoration: none;
   color: white;
+  margin-top: 1em;
+}
+.modal__content a:hover {
+  color: #6cff52;
 }
 
 .modal__close {
