@@ -1,0 +1,3 @@
+[submodule "CvPortalUppgift"]
+    path = CvPortalUppgift
+    url = https://github.com/yourusername/CvPortalUppgiftReact.git
